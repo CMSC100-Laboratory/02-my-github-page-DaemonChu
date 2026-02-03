@@ -1,5 +1,7 @@
 Denise Kirssy F. Chua
+
 BS Computer Science
+
 https://cmsc100-laboratory.github.io/02-my-github-page-DaemonChu/
 
 Steps on how to create a GitHub page:
@@ -15,4 +17,6 @@ Key takeaways:
 - HTML allows us to easily create and structure content on the Web, such as in creating webpages.
 - CSS specifies the styling and presentation of our HTML. As it is used for web designing, it offers users a lot of ways to create their own visual design to their web pages.
 - HTML and CSS goes hand-in-hand in web development. 
+
+Google Docs Reference : https://docs.google.com/document/d/1k32H5qYeJEI9YcRhPAcJ8nbyxsZ5CnzdT6bahDkfE2w/edit?tab=t.0
 

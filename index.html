@@ -2,14 +2,93 @@
 
 <html>
     <head>
-        <title>Sample Web Page</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <title>Denise Chua's Web Portfolio</title>
     </head>
 
     <body>
-        <h1>Heading</h1>
-        <p>First Paragraph</P>
-        <hr />
-        <p>Second Paragraph</p>
-    </body>
 
+        <!-- site header
+        ============================================ -->
+        <header>
+            <div class="site-navbar">
+                <nav class="navbar-menu">
+                    <h1>Denise Chua</h1>
+                    <ul class="navbar-list">
+                        <li class="navbar-item"><a href="#about" class="navbar-link">About</a></li>
+                        <li class="navbar-item"><a href="#skills" class="navbar-link">Skills</a></li>
+                        <li class="navbar-item"><a href="#projects" class="navbar-link">Projects</a></li>
+                        <li class="navbar-item"><a href="#contact" class="navbar-link">Contact Me</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- site sections
+        ============================================ -->
+        <section id="about" class="section">
+            <div class ="welcome-text">
+                <h2>Lorem Ipsum <br>& Student</h2>
+                <p class = "leading">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dolor lectus, rutrum eu tristique id, volutpat at lacus. 
+                    Sed sed massa non ipsum faucibus elementum mollis vitae augue.</p>
+            <a href ="#projects" class="button">View my work</a>
+            </div>
+            <div class="welcome-img">
+                <img src="personal_photo.png" alt="pic of me">
+            </div>
+        </section>
+
+        <section id="projects">
+            <h3>Projects I have worked on.</h3>
+            <div class="projects grid">
+                <a href="#">
+                    <img src="cmsc12.png" alt="project image">
+                    <h4>CMSC 12</h4>
+                </a>
+                <a href="#">
+                    <img src="cmsc22.png" alt="project image">
+                    <h4>CMSC 22</h4>
+                </a>
+                <a href="#">
+                    <img src="cmsc150.png" alt="project image">
+                    <h4>CMSC 150</h4>
+                </a>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h3>Things I can do</h3>
+            <ul>
+                <li>
+                    <img src="icon_javascript.png" alt="skills">
+                    <h4>JavaScript</h4>
+                </li>
+                <li>
+                    <img src="icon_python.png" alt="skills">
+                    <h4>Python</h4>
+                </li>
+            </ul>
+            <p class="leading">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </section>
+
+        <section id="contact">
+            <h3>Get in touch</h3>
+            <p class="leading">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <form>
+                <input type="text" placeholder="NAME">
+                <input type="email" placeholder ="EMAIL">
+                <textarea placeholder="YOUR MESSAGE"></textarea>
+                <button class="button">send message</button>
+            </form>
+        </section>
+
+        <footer>
+            <div clas="grid">
+                <ul class="social">
+                    <li><a href="#"><img src="assets/icon_github.png" alt="github"></a></li>
+                    <li><a href="#"><img src="assets/icon_facebook.png" alt="facebook"></a></li>              
+                </ul>
+            </div>
+        </footer>
+    </body>
 </html>

@@ -1,3 +1,5 @@
+<!-- Chua, Denise Kirssy F. | CMSC 100 Exer # 2 -->
+
 <!DOCTYPE html>
 
 <html>
@@ -10,70 +12,111 @@
 
         <!-- site header
         ============================================ -->
-        <header>
-            <div class="site-navbar">
-                <nav class="navbar-menu">
-                    <h1>Denise Chua</h1>
-                    <ul class="navbar-list">
-                        <li class="navbar-item"><a href="#about" class="navbar-link">About</a></li>
-                        <li class="navbar-item"><a href="#skills" class="navbar-link">Skills</a></li>
-                        <li class="navbar-item"><a href="#projects" class="navbar-link">Projects</a></li>
-                        <li class="navbar-item"><a href="#contact" class="navbar-link">Contact Me</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+            <nav class="navbar-menu grid">
+                <h1>Denise Chua's Web Portfolio</h1>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </nav>
 
-        <!-- site sections
+        <!-- site sections (about)
         ============================================ -->
-        <section id="about" class="section">
+        <section id="about" class="grid">
             <div class ="welcome-text">
-                <h2>Lorem Ipsum <br>& Student</h2>
-                <p class = "leading">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dolor lectus, rutrum eu tristique id, volutpat at lacus. 
-                    Sed sed massa non ipsum faucibus elementum mollis vitae augue.</p>
-            <a href ="#projects" class="button">View my work</a>
+                <h2><strong>Hi, I'm Denise! <br>A UPLB BS Computer Science Student</strong></h2>
+                <p class="leading">
+                My name is Denise Chua, and I am currently pursuing a Bachelor of Science in Computer Science at the University of the Philippines Los Baños (UPLB). Born on July 27, 2006, I grew up in Quezon City, where my fascination with technology began at an early age with my exposure to various digital media, such as video games.
+                </p>
+
+                <p class="leading">
+                During my secondary education at Miriam College Loyola Heights, my passion for technology flourished as I began to explore the vast possibilities of computers when my parents gave me my first (hand-me-down) devices. This opportunity ignited my curiosity and love for innovation, as I was able to learn about jailbreaking, emulating, and other ways to maximize the potential of the technology I had access to. Despite facing limited access to resources, I discovered the empowering world of open-source communities, which inspired me to create my own projects even as a financially constrained teenager at the time. The pandemic also provided a unique opportunity for personal exploration, allowing me to delve into various tech-related projects further.
+
+                <p class="leading">
+                My unwavering passion for computers and technology ultimately motivated me to pursue a degree in Computer Science. As a college student, I have dedicated my time to learning multiple programming languages and expanding my knowledge on technology and its applications. I am particularly enthusiastic about Free and Open-Source Software (FOSS) development and self-hosting, as well as the intersection of computer science and biology, particularly in fields such as computational neuroscience (Brain-Computer Interfaces or BCI) and bioinformatics.
+                </p>
+
+                <p class="leading">
+                Currently, as an animal and plant enthusiast, I focus on developing self-hosted automation solutions for my hobbies, such as maintaining an indoor garden. This simple and personal project reflects my commitment to integrating technology with my fascination for nature's intuitive and systematic design.
+                </p>
+            <a href ="#portfolio" class="button">View my work</a>
             </div>
-            <div class="welcome-img">
-                <img src="personal_photo.png" alt="pic of me">
+            <div class="personal-img">
+                <img src="assets/mydogbutme.jpg" alt="pic of me">
             </div>
         </section>
 
-        <section id="projects">
-            <h3>Projects I have worked on.</h3>
+        <!-- site sections (portfolio)
+        ============================================ -->
+        <section id="portfolio">
+            <h3><strong>My Projects</strong></h3>
             <div class="projects grid">
-                <a href="#">
-                    <img src="cmsc12.png" alt="project image">
-                    <h4>CMSC 12</h4>
+                <a>
+                    <img src="assets/cmsc12.png" alt="project image">
+                    <h4>CMSC 12: ITEA Furniture Order Form</h4>
                 </a>
-                <a href="#">
-                    <img src="cmsc22.png" alt="project image">
-                    <h4>CMSC 22</h4>
+                <a>
+                    <img src="assets/cmsc22.png" alt="project image">
+                    <h4>CMSC 22: Celestial Wings (Bullet Hell Game)</h4>
                 </a>
-                <a href="#">
-                    <img src="cmsc150.png" alt="project image">
-                    <h4>CMSC 150</h4>
+                <a>
+                    <img src="assets/cmsc150.png" alt="project image">
+                    <h4>CMSC 150: Greenvale City Pollution Reduction Plan</h4>
                 </a>
             </div>
         </section>
 
+        <!-- site sections (skills)
+        ============================================ -->
         <section id="skills">
-            <h3>Things I can do</h3>
+            <h3><strong>Programming Skills</strong></h3>
             <ul>
                 <li>
-                    <img src="icon_javascript.png" alt="skills">
+                    <img src="assets/javascript-logo.png" alt="skills">
                     <h4>JavaScript</h4>
+                    <h5>(Intermediate Proficiency)</h5>
                 </li>
                 <li>
-                    <img src="icon_python.png" alt="skills">
+                    <img src="assets/html-logo.png" alt="skills">
+                    <h4>HTML</h4>
+                    <h5>(Beginner Proficiency)</h5>
+                </li>
+                <li>
+                    <img src="assets/css-logo.png" alt="skills">
+                    <h4>CSS</h4>
+                    <h5>(Beginner Proficiency)</h5>
+                </li>
+                <li>
+                    <img src="assets/java-logo.png" alt="skills">
+                    <h4>Java</h4>
+                    <h5>(Intermediate Proficiency)</h5>
+                </li>
+                <li>
+                    <img src="assets/r-logo.png" alt="skills">
+                    <h4>R</h4>
+                    <h5>(Beginner Proficiency)</h5>                    
+                </li>
+                <li>
+                    <img src="assets/c-logo.png" alt="skills">
+                    <h4>C</h4>
+                    <h5>(Intermediate Proficiency)</h5>
+                </li>
+                <li>
+                    <img src="assets/python-logo.png" alt="skills">
                     <h4>Python</h4>
+                    <h5>(Advanced Proficiency)</h5>
                 </li>
             </ul>
-            <p class="leading">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p class="leading"><strong>Overall, I am a capable programmer with experience in various languages and frameworks. I enjoy solving problems and building effective, user-friendly solutions for my clients.</strong></p>
         </section>
 
+        <!-- site sections (contact)
+        ============================================ -->
         <section id="contact">
-            <h3>Get in touch</h3>
-            <p class="leading">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h3><strong>Get in Touch!</strong></h3>
+            <p class="leading">I would love to hear from you! Whether you have a project in mind, feedback, or just want to connect, feel free to reach out.
             <form>
                 <input type="text" placeholder="NAME">
                 <input type="email" placeholder ="EMAIL">
@@ -82,11 +125,13 @@
             </form>
         </section>
 
+        <!-- site sections (footer)
+        ============================================ -->
         <footer>
-            <div clas="grid">
+            <div class="grid">
+                <a href="#about">Return to Top</a>
                 <ul class="social">
-                    <li><a href="#"><img src="assets/icon_github.png" alt="github"></a></li>
-                    <li><a href="#"><img src="assets/icon_facebook.png" alt="facebook"></a></li>              
+                    <li><a href="https://github.com/DaemonChu"><img src="assets/github-icon.png" alt="github"></a></li>       
                 </ul>
             </div>
         </footer>

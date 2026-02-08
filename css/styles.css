@@ -1,0 +1,311 @@
+/* Chua, Denise Kirssy F. | CMSC 100 Exer # 2 */
+
+/* variables (color scheme) */
+:root{
+  --primary: #EB5E28;
+  --secondary: #403D39;
+}
+
+/* CSS reset (for consistent styling) */
+body,p,a,ul,li{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+li{
+  list-style-type: none;
+}
+
+/* base styles */
+body{
+  background: var(--secondary);
+  overflow-x: hidden;
+  font-family: 'IBM Plex Sans Condensed';
+}
+.button{
+background: none;
+border: 2px solid var(--primary);
+color: var(--primary);
+padding: 6px 12px;
+border-radius: 10px;
+text-transform: uppercase;
+box-shadow: 1px 2px 3px rgba(0,0,0,0.6);
+display: inline-block;
+font-size: 1em;
+}
+.button:hover{
+    color: #252422;
+    background: var(--primary);
+    transition: background-color 0.3s, color 0.3s;
+}
+input,textarea{
+  background: rgba(255,255,255,0.05);
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: 2px solid #CCC5B9;
+  color: #FFFCF2;
+  font-size: 1em;
+}
+
+/* general font style */
+@font-face {
+  font-family: 'IBM Plex Sans Condensed';
+  src: url("../assets/fonts/IBMPlexSansCondensed-Regular.ttf") format("truetype");
+}
+h1,h2,h3,h4{
+  color: #FFFCF2;
+  font-weight: normal;
+  line-height: 1.4em;
+}
+p,a,li{
+  color: #FFFCF2;
+  line-height: 1.4em;
+  font-size: 1em;
+}
+a:hover{
+    color: #CCC5B9;
+    transition: color 0.3s;
+}
+h1, h3{
+  font-size: 1.2em;
+}
+h2{
+  font-size: 1.6em;
+}
+h4{
+  font-size: 1.1em;
+}
+.leading{
+  font-size: 1.1em;
+}
+
+/* general formatting */
+.grid{
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 10px;
+  box-sizing: border-box;
+}
+.navbar-menu{
+  margin: 0 20px;
+}
+.navbar-menu h1{
+  grid-column: 1/4;
+  grid-row: 1;
+  padding-bottom: 10px;
+  border-bottom: 3px solid var(--primary);
+  display: inline-block;
+}
+#about{
+  padding: 0 20px 20px 20px;
+}
+.welcome-text{
+  grid-column: 1/6;
+}
+.welcome-text a{
+  margin: 20px 0;
+}
+.personal-img {
+    grid-column: 6 / 9;
+    display: flex;
+    padding: 10px;
+    width: 100%; 
+    height: auto; 
+}
+.personal-img img{
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+#portfolio{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  padding: 30px 20px;
+  border-top: 3px solid var(--primary);
+}
+#portfolio h3{
+  margin-bottom: 0;
+  text-align: center;
+}
+.projects {
+  margin: 10px 0;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  flex-wrap: wrap; 
+  gap: 5px; 
+}
+.projects a {
+  display: flex;
+  flex-direction: column; 
+  justify-content: flex-start; 
+  align-items: center; 
+  text-align: center; 
+  padding: 10px; 
+  overflow: hidden; 
+  flex: 0 1 30%;
+}
+.projects img {
+  width: 100%; 
+  object-fit: cover;
+}
+.projects h4 {
+  color: #FFFCF2; 
+  margin-top: 5px; 
+}
+#skills{
+  padding: 30px 20px;
+  background: #CCC5B9;
+}
+#skills h3{
+  text-align: center;
+  color: #252422;
+}
+#skills h4{
+  color: #252422;
+  margin-bottom: 5px;
+}
+#skills h5{
+  color: #403D39;
+  margin-top: 0px;
+}
+#skills ul{
+  margin: 40px 0;
+}
+#skills li{
+  padding: 10px;
+  background: #FFFCF2;
+  grid-column: span 4;
+  text-align: center;
+}
+#skills img{
+  height: 100px;
+  margin: 10px auto;
+}
+#skills p{
+  text-align: center;
+  color: #252422;
+  margin: 0 20px;
+}
+footer{
+  padding: 30px 20px;
+  background-color: #252422;
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+footer .copyright{
+  grid-column: 1/3;
+  font-size: 0.8em;
+}
+footer .social{
+  grid-column: 7/9;
+  display: flex;
+  justify-content: flex-end;
+}
+footer li{
+  margin: 0 6px;
+}
+footer img{
+    width: 70px;       
+    height: auto;     
+    object-fit: cover;   
+    display: block;       
+}
+#contact{
+  padding: 30px 20px;
+  background: #403D39;
+  border-radius: 10px;
+}
+#contact h3, #contact p{
+  margin-bottom: 0;
+  text-align: center;
+}
+#contact form{
+  width: 80%;
+  max-width: 400px;
+  margin: 20px auto;
+  text-align: center;
+}
+#contact input,#contact textarea{
+  color: #FFFCF2;
+  width: 100%;
+  margin: 10px 0;
+}
+#contact textarea{
+  max-width: 100%;
+  height: 200px;
+}
+#contact .button{
+  margin-top: 10px;
+}
+
+
+/* for laptop size */
+@media screen and (min-width: 960px){
+
+  body{
+    font-size: 18px;
+  }
+  .grid{
+    margin: 0 auto;
+    width: 100%;
+  }
+  .leading{
+    margin: 20px 0;
+  }
+  .navbar-menu{
+    padding: 0 20px;
+  }
+  .navbar-menu h1{
+    grid-column: 1/3;
+  }
+  .navbar-menu ul{
+    display: flex;
+    grid-column: 6/9;
+    justify-content: flex-end;
+    align-self: center;
+  }
+  .navbar-menu li{
+    margin-left: 20px;
+  }
+  .welcome-text{
+    grid-column: 1/5;
+    align-self: center;
+  }
+  #about{
+    padding-bottom: 40px;
+  }
+  .projects a *{
+    max-width: 100%;
+    margin: 30px 10%;
+  }
+  #skills{
+    padding: 30px 20px;
+  }
+  #skills ul{
+    margin: 40px auto;
+  }
+  #skills li{
+    grid-column: span 2;
+  }
+  #skills p{
+    max-width: 600px;
+    margin: 40px auto;
+  }
+  footer{
+    background-size: 20%;
+    padding: 40px 20px;
+  }
+
+}
+
+/* desktop styles */
+@media screen and (min-width: 1200px){
+
+  body{
+    font-size: 20px;
+  }
+
+}

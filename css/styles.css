@@ -23,9 +23,9 @@ body{
   font-family: 'IBM Plex Sans Condensed';
 }
 .button{
-background: none;
+background: var(--primary);
 border: 2px solid var(--primary);
-color: var(--primary);
+color: #FFFCF2;
 padding: 6px 12px;
 border-radius: 10px;
 text-transform: uppercase;
@@ -35,7 +35,8 @@ font-size: 1em;
 }
 .button:hover{
     color: #252422;
-    background: var(--primary);
+    background: #FFFCF2;
+    border: 2px solid #252422;
     transition: background-color 0.3s, color 0.3s;
 }
 input,textarea{
